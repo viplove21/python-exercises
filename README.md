@@ -6,7 +6,7 @@ However, if these elements are sorted, we are able to take the advantage of this
 
 Pictorically, binary search can be depicted below-
 
-![image](https://user-images.githubusercontent.com/33410914/203826136-b1d71b16-92b0-4fc9-98cb-c2af5a105bc1.png)
 
+![1EYkSkQaoduFBhpCVx7nyEA](https://user-images.githubusercontent.com/33410914/203827425-b16a0806-db92-459a-84b9-cf36802a365a.gif)
 
 The reason behind this huge performance boost is because for each search iterations, we are able to slice the elements we will be looking at in half. Fewer elements to look at = faster search time. And this all comes from the simple fact that in a sorted list, everything to the right of n will be greater or equal to it, and vice versa.

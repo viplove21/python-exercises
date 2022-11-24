@@ -9,4 +9,9 @@ Pictorically, binary search can be depicted below-
 
 ![1EYkSkQaoduFBhpCVx7nyEA](https://user-images.githubusercontent.com/33410914/203827425-b16a0806-db92-459a-84b9-cf36802a365a.gif)
 
+
+In the first diagram, the mid element of the sorted array is hit which is 23. Now, as our target element is 37 which is > 23, the search will shift to the right where again it will search the mid element which is 41. As 41 > 37, the search function goes to the left where it is able to find our target element within 3 steps. 
+
+In the second diagram, for sequential search, the serach function will scan through all elements in the array until it reaches our target element. Steps involved in finding it are 11. This is where binary search comes to the rescue.
+
 The reason behind this huge performance boost is because for each search iterations, we are able to slice the elements we will be looking at in half. Fewer elements to look at = faster search time. And this all comes from the simple fact that in a sorted list, everything to the right of n will be greater or equal to it, and vice versa.
